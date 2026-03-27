@@ -467,7 +467,7 @@ function todayEcuador() {
 //   4. Copia la URL (ej: https://rosasud-asistencia-xxxxx-rtdb.firebaseio.com)
 //   5. Pégala aquí abajo en DB_URL
 // ═══════════════════════════════════════════════════════════
-const DB_URL = 'TU_URL_FIREBASE_AQUI'; // ← CAMBIA ESTO
+const DB_URL = 'https://rosasud-2026-default-rtdb.firebaseio.com'; // ← CAMBIA ESTO
 const DB = DB_URL.replace(/\/+$/, '');
 
 // Fallback local para cuando no hay internet
@@ -1696,7 +1696,7 @@ function showToast(msg,color='#0f2f5c') {
 // Auto-login async
 (async () => {
   // Verificar configuración de base de datos
-  if (!DB_URL || DB_URL === 'TU_URL_FIREBASE_AQUI') {
+  if (!DB_URL || DB_URL === 'https://rosasud-2026-default-rtdb.firebaseio.com') {
     document.body.innerHTML = `
     <div style="position:fixed;inset:0;background:linear-gradient(135deg,#0f2f5c,#1a4a8a);display:flex;align-items:center;justify-content:center;padding:20px;font-family:'DM Sans',sans-serif">
       <div style="background:white;border-radius:20px;padding:32px;max-width:500px;width:100%">
@@ -1714,7 +1714,7 @@ function showToast(msg,color='#0f2f5c') {
             <li>Clic <strong>"Create Database"</strong> → selecciona <strong>"Start in test mode"</strong></li>
             <li>Copia la URL que aparece (termina en <code>.firebaseio.com</code>)</li>
             <li>Abre este archivo HTML en un editor de texto</li>
-            <li>Busca <code>TU_URL_FIREBASE_AQUI</code> y reemplázalo con tu URL</li>
+            <li>Busca <code>https://rosasud-2026-default-rtdb.firebaseio.com</code> y reemplázalo con tu URL</li>
             <li>Guarda y sube el archivo a GitHub nuevamente</li>
           </ol>
         </div>
